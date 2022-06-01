@@ -7,6 +7,14 @@
     padding:0px;
     color:black;
 }
+h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.contents1{
+    font-size: 17px;
+    font-weight: 100;
+}
 .intro_bg{
     background-image: url('image/intro.png');
     width:100%;
@@ -18,14 +26,14 @@
     margin:auto;
     height: 86px;
 }
-.searchArea{
+.search_area{
     width: 240px;
     height: 40px;
     background: rgba(0,0,0,0.5);
     border-radius: 5px;
     margin-top:24px;
 }
-.searchArea>form>input{
+.search_area>form>input{
     border: none;
     width: 200px;
     height: 40px;
@@ -33,7 +41,7 @@
     color: white;
     padding-left:10px;
 }
-.searchArea>form>span{
+.search_area>form>span{
     width: 100px;
     color:yellowgreen;
     font-weight: bold;
@@ -51,4 +59,38 @@
 }
 .nav>li>a{
     color:whitesmoke;
+}
+.amount{
+    position: relative;
+    top:-66px;
+    display: flex;
+    width: 1280px;
+    background: skyblue;
+    margin: auto;
+}
+.amount>li{
+    flex:1;
+    height: 132px;
+}
+.amount>li>div{
+    text-align: center;
+    height: 57px;
+    background: yellowgreen;
+    margin-top: 37px;
+    opacity: 0.95;
+    font-size: 20px;
+}
+.amount>li:not(:last-child)>div{
+    border-right: 1px solid gray;
+}
+.intro_title{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top:220px;
+}
+.intro_title>h1,h4{
+    color:white;
+    opacity:1; /*글자의 투명도 조절 0~1*/
+    letter-spacing: 3px;
 }
