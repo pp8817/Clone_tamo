@@ -15,6 +15,10 @@ h1{
     font-size: 17px;
     font-weight: 100;
 }
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
 .intro_bg{
     background-image: url('image/intro.png');
     width:100%;
@@ -65,8 +69,9 @@ h1{
     top:-66px;
     display: flex;
     width: 1280px;
-    background: skyblue;
+    background: white;
     margin: auto;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.4);
 }
 .amount>li{
     flex:1;
@@ -75,13 +80,13 @@ h1{
 .amount>li>div{
     text-align: center;
     height: 57px;
-    background: yellowgreen;
     margin-top: 37px;
     opacity: 0.95;
     font-size: 20px;
+    font-weight: 900;
 }
 .amount>li:not(:last-child)>div{
-    border-right: 1px solid gray;
+    border-right: 1px solid #E1E1E1;
 }
 .intro_title{
     width: 100%;
@@ -93,4 +98,57 @@ h1{
     color:white;
     opacity:1; /*글자의 투명도 조절 0~1*/
     letter-spacing: 3px;
+}
+/* main_text0 */
+.main_text{
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+.main_text>h1{
+    padding-top: 116px;
+    text-align: center;
+}
+.main_text>.contents1{
+    text-align: center;
+}
+.icons{
+    display: flex;
+    width: 1280px;
+    height: 302px;
+    margin: auto;
+}
+.icons>li{
+    height: 302px;
+    background: white;
+    flex: 1;
+    margin-top: 49px;
+    text-align: center;
+}
+
+.icons>li:not(:last-child){
+    margin-right: 20px;
+}
+.icons>li>.icon_img{
+    margin-top: 36px;
+}
+.icons>li>.contents2{
+    font-size: 14px;
+    font-weight: 100;
+}
+.icons .contents2{
+    width: 235px;
+    margin: auto;
+    letter-spacing: -1px;
+}
+.more{
+    width: 100px;
+    height: 30px;
+    background: #2F7AF4;
+    color: white;
+    margin: auto;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
 }
